@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LotAPI</name>
+    </assembly>
+    <members>
+        <member name="M:LotAPI.Business.PrizeDrawLogic.ListToDataTable(System.Collections.IList)">
+            <summary>
+            将List集合转换成DataTable
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LotAPI.Controllers.PrizeDrawController.GetAllLotMaster">
+            <summary>
+            Get all LotMaster
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LotAPI.Controllers.PrizeDrawController.GetLotGameHistory(LotAPI.Models.LotGameListReq)">
+            <summary>
+            Get Lot Game History
+            </summary>
+            <param name="requst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LotAPI.Controllers.PrizeDrawController.CeateNewLotGame(LotAPI.Models.GenerateRewardDataReq)">
+            <summary>
+            产生抽奖资料
+            </summary>
+            <param name="requst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LotAPI.Controllers.PrizeDrawController.LotGameList(LotAPI.Models.LotGameListReq)">
+            <summary>
+            分析抽奖数据
+            </summary>
+            <param name="requst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LotAPI.DataAccess.IsDbContext.BasicDbContext.OracleModelSettings(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            将实体的表,属性转为全大写
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardList.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardList.Seq">
+            <summary>
+            Non-significant number
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardList.AwardName">
+            <summary>
+            Award name
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardList.AwardManCount">
+            <summary>
+            Number of prizes available for drawing
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardList.Status">
+            <summary>
+            Whether the prize logo is drawn, 1: not drawn, 2: drawn
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardMan.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardMan.AwardManNumber">
+            <summary>
+            Winner No
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotAwardMan.LotAwardListSeq">
+            <summary>
+            Award No, corresponding to LOTAWARDLIST.SEQ field
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotMaster.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotMaster.TotalManCount">
+            <summary>
+            The total number of people that can be drawn
+            </summary>
+        </member>
+        <member name="P:LotAPI.DataAccess.Models.LotMaster.CreateDate">
+            <summary>
+            Ceate date
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.GenerateRewardDataReq.TotalManCount">
+            <summary>
+            The total number of people that can be drawn
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.GenerateRewardDataReq.LotAwardData">
+            <summary>
+            Reward record form
+            </summary>
+        </member>
+        <member name="T:LotAPI.Models.LotAwardData">
+            <summary>
+            Reward record form
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotAwardData.AwardName">
+            <summary>
+            Award name
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotAwardData.AwardManCount">
+            <summary>
+            Number of prizes available for drawing
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.GenerateRewardDataRes.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameListReq.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameListRes.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameListRes.LotAwardName">
+            <summary>
+            Name of winner
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameListRes.LotAwardMan">
+            <summary>
+            LotAwardMan List
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameListRes.Message">
+            <summary>
+            Assign the value after completing the lottery
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameHistoryRes.LotMasterId">
+            <summary>
+            Master table id
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameHistory.LotAwardName">
+            <summary>
+            Name of winner
+            </summary>
+        </member>
+        <member name="P:LotAPI.Models.LotGameHistory.LotAwardMan">
+            <summary>
+            LotAwardMan List
+            </summary>
+        </member>
+    </members>
+</doc>
