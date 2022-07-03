@@ -6,7 +6,7 @@
     <members>
         <member name="M:LotAPI.Business.PrizeDrawLogic.ListToDataTable(System.Collections.IList)">
             <summary>
-            将List集合转换成DataTable
+            將list轉換成DataTable
             </summary>
             <param name="list"></param>
             <returns></returns>
@@ -26,21 +26,21 @@
         </member>
         <member name="M:LotAPI.Controllers.PrizeDrawController.CeateNewLotGame(LotAPI.Models.GenerateRewardDataReq)">
             <summary>
-            产生抽奖资料
+            create new lot game 
             </summary>
             <param name="requst"></param>
             <returns></returns>
         </member>
         <member name="M:LotAPI.Controllers.PrizeDrawController.LotGameList(LotAPI.Models.LotGameListReq)">
             <summary>
-            分析抽奖数据
+            d
             </summary>
             <param name="requst"></param>
             <returns></returns>
         </member>
         <member name="M:LotAPI.DataAccess.IsDbContext.BasicDbContext.OracleModelSettings(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <summary>
-            将实体的表,属性转为全大写
+            
             </summary>
             <param name="modelBuilder"></param>
         </member>
